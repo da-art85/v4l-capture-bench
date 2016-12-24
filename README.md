@@ -16,4 +16,7 @@ To save single frame to a file use -o and pipe to stdout:
 ```
 ./v4l-capture -c 1 -o 1> test.jpg
 ```
-
+To change frame format:
+```
+v4l2-ctl -v width=1280,height=720,pixelformat=0
+```
