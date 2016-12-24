@@ -6,8 +6,14 @@ Compile and run with param -c frames_number
 
 Example:
 ```
-gcc v4l2-capture.c
+make
 v4l2-ctl -p 30
-./a.out -c 1000
+./v4l2-capture -c 1000
 ```
 This will capture 1000 frames and calculate the time took. v4l2-ctl sets 30 fps frame rate, so you should expect same actual frame rate
+
+To save single frame to a file use -o and pipe to stdout:
+```
+./v4l-capture -c 1 -o 1> test.jpg
+```
+

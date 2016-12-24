@@ -658,7 +658,7 @@ int main(int argc, char **argv)
 	double sec2 = (double)(tv2.tv_sec*1000 + tv2.tv_usec/1000);
 	double secs = (sec2-sec1)/1000.0;
 	
-	printf ("\nsecs: %lf, fps: %.2lf\n", secs, frame_count/secs);
+	fprintf (stderr, "\nsecs: %lf, fps: %.2lf\n", secs, frame_count/secs);
 	stop_capturing();
 	uninit_device();
 	close_device();
