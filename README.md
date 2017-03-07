@@ -14,7 +14,7 @@ This will capture 1000 frames and calculate the time took. v4l2-ctl sets 30 fps 
 
 To save single frame to a file use -o and pipe stdout to file:
 ```
-./v4l-capture -c 1 -o 1> test.jpg
+./v4l2-capture -c 1 -o 1> test.jpg
 ```
 To change frame format:
 ```
