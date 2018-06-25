@@ -8,13 +8,13 @@ Example:
 ```
 make
 v4l2-ctl -p 30
-./v4l2-capture -c 1000
+./v4l-capture -c 1000
 ```
 This will capture 1000 frames and calculate the time took. v4l2-ctl sets 30 fps frame rate, so you should expect same actual frame rate
 
 To save single frame to a file use -o and pipe stdout to file:
 ```
-./v4l2-capture -c 1 -o 1> test.jpg
+./v4l-capture -c 1 -o 1> test.jpg
 ```
 To change frame format:
 ```
